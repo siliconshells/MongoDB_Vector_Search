@@ -26,6 +26,8 @@ To get the bash terminal interface of the **MongoDB Search** container within yo
 1. chmod 400 /etc/mongot/secrets/voyage-api-query-key
 1. chmod 400 /etc/mongot/secrets/voyage-api-indexing-key
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
 ## Using the installation
 To use the setup:
