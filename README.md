@@ -21,7 +21,7 @@ To get the bash terminal interface of the **MongoDB Search** container within yo
 1. chmod 700 /etc/mongot/secrets
 1. echo -n <query key> | tee /etc/mongot/secrets/voyage-api-query-key > /dev/null
 1. echo -n <indexing key> | tee /etc/mongot/secrets/voyage-api-indexing-key > /dev/null
-    > [!NOTE]
+    > [!NOTE]   
     > The indexing and query keys can be generated online at the Atlas page under **AI Models**. I used the Voyage-4 model.
 1. chmod 400 /etc/mongot/secrets/voyage-api-query-key
 1. chmod 400 /etc/mongot/secrets/voyage-api-indexing-key
