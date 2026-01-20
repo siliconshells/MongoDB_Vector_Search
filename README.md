@@ -34,6 +34,7 @@ To use the setup:
 1. To create a vector index, run the python script `create_index.py`
 1. To run a query, run the python script `run_query.py`
 1. To remove the index created above, run the python script `remove_index.py`
+> [!TIP]
 > Feel free to modify the scripts to change the behavior.
 
 
