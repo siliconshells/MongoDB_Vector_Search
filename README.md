@@ -5,14 +5,13 @@ To setup the MongoDB Community version and the Mongo Search locally, please foll
 1. Install Docker Desktop
 1. `docker pull mongodb/mongodb-community-server:latest`
 1. `docker pull mongodb/mongodb-community-search:latest`
-1. In Terminal, navigate to the location with the following files:
+1. In Terminal, navigate to the folder location with the following files:
 - mongod.conf
 - mongot.conf
 - init-mongo.sh
 - pwfile
 - docker-compose.yml
 and Run
-1. `docker network create search-community-net`
 1. `docker compose up -d`
 
 
@@ -23,7 +22,7 @@ To get the bash terminal interface of the **MongoDB Search** container within yo
 1. chmod 700 /etc/mongot/secrets
 1. echo -n <query key> | tee /etc/mongot/secrets/voyage-api-query-key > /dev/null
 1. echo -n <indexing key> | tee /etc/mongot/secrets/voyage-api-indexing-key > /dev/null
->> The indexing and query keys can be generated online at the Atlas page under **AI Models**. I used the Voyage-4 model.
+> The indexing and query keys can be generated online at the Atlas page under **AI Models**. I used the Voyage-4 model.
 1. chmod 400 /etc/mongot/secrets/voyage-api-query-key
 1. chmod 400 /etc/mongot/secrets/voyage-api-indexing-key
 
@@ -34,7 +33,7 @@ To use the setup:
 1. To create a vector index, run the python script `create_index.py`
 1. To run a query, run the python script `run_query.py`
 1. To remove the index created above, run the python script `remove_index.py`
->> Feel free to modify the scripts to change the behavior.
+> Feel free to modify the scripts to change the behavior.
 
 
 ## Note
